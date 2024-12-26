@@ -1,69 +1,174 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    
+    <!-- Start of headStart -->
+    
+    <!-- End of headStart -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiid</title>
+    <meta name="generator" content="Framer 9f68555">
+    <title>Kiid.tech</title>
+    <meta name="description" content="next gen online presence">
+    <meta name="framer-search-index" content="https://framerusercontent.com/sites/2flKSpfDHJS4cvWpFYQs14/searchIndex-8mJhd4CGYWJF.json">
+    <link href="https://framerusercontent.com/sites/icons/default-favicon-light.v1.png" rel="icon" media="(prefers-color-scheme: light)">
+    <link href="https://framerusercontent.com/sites/icons/default-favicon-dark.v1.png" rel="icon" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" href="https://framerusercontent.com/sites/icons/default-touch-icon.v3.png">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kiid.tech">
+    <meta property="og:description" content="next gen online presence">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kiid.tech">
+    <meta name="twitter:description" content="next gen online presence">
+    
+    <meta name="robots" content="max-image-preview:large">
+    <link rel="canonical" href="https://sympathetic-motivation-781818.framer.app/">
+    <meta property="og:url" content="https://sympathetic-motivation-781818.framer.app/">
+    <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/2flKSpfDHJS4cvWpFYQs14/chunk-RTFM5PP2.mjs">
+    <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/2flKSpfDHJS4cvWpFYQs14/chunk-JR5VT52U.mjs">
+    <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/2flKSpfDHJS4cvWpFYQs14/chunk-RIUMFBNJ.mjs">
+    <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/2flKSpfDHJS4cvWpFYQs14/7sJk7CzwPQ7mXO_iFMLTuICmuUAXi9u2JFyKOEgmET4.LCQF2GVP.mjs">
+    <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/2flKSpfDHJS4cvWpFYQs14/chunk-KGO77DXW.mjs">
+    <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/2flKSpfDHJS4cvWpFYQs14/chunk-42U43NKG.mjs">
+    <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/2flKSpfDHJS4cvWpFYQs14/script_main.6C4HEOQW.mjs">
     <style>
+        /* Base styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: "Kohinoor Gujarati", sans-serif;
+            background: white;
+            min-height: 100vh;
+            width: 100%;
         }
 
-        .hero {
-            background: linear-gradient(45deg, #0056b3, #8a2be2);
-            height: 100vh;
+        /* Main container */
+        .container {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            overflow: hidden;
+            background-color: #b66d6e;
+        }
+
+        /* Background image */
+        .bg-image {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+
+        /* Content wrapper */
+        .content {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
             display: flex;
+            flex-direction: row;
             align-items: center;
             justify-content: center;
-            text-align: center;
+            min-height: 100vh;
             color: white;
+            gap: 3rem;
         }
 
-        .hero-content {
-            max-width: 800px;
-            padding: 20px;
+        /* Logo image */
+        .logo {
+            width: 300px;
+            height: auto;
+            filter: drop-shadow(0px 4px 2px rgba(0,0,0,.25));
         }
 
+        /* Text container */
+        .text-content {
+            flex: 1;
+        }
+
+        /* Text styles */
         h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
         }
 
         p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
+            font-size: clamp(1rem, 2vw, 1.65rem);
+            margin-bottom: 2rem;
+            max-width: 700px;
         }
 
+        /* Button styles */
         .cta-button {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #007bff;
+            background-color: #0096ff;
             color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1.125rem;
+            font-weight: 700;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            transition: background-color 0.3s;
+            box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+            transition: transform 0.2s;
+            display: inline-block;
         }
 
         .cta-button:hover {
-            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        /* Media queries */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                padding: 1.5rem;
+                text-align: center;
+                gap: 2rem;
+            }
+
+            .logo {
+                width: 200px;
+            }
+
+            .text-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                padding: 1rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="hero">
-        <div class="hero-content">
-            <img src="https://utfs.io/f/2UCFz15YrSm6cTDtvhHDdprIebNCQlt93LTEUxAjmyZXan2v" alt="Kiid Logo" class="logo" height=225 width=149>
-            <h1>Let's make something amazing</h1>
-            <p>Kiid is a platform helping you create your digital identity.</p>
-            <a href="mailto:ren@kiid.tech" class="cta-button">Get Started</a>
+    <div class="container">
+        <img src="https://framerusercontent.com/images/9UeMVU8U7Cg38lV1KPxI1crm86Y.png" alt="Background" class="bg-image">
+        <div class="content">
+            <img src="https://framerusercontent.com/images/Li28bPaSQLVglXg8ie94QcnF7eE.png" alt="Kiid Logo" class="logo">
+            <div class="text-content">
+                <h1>Let's make something</h1>
+                <h2>Amazing</h2>
+                <p>Kiid is a platform helping you craft your digital identity.</p>
+                <a href="#" class="cta-button">Get Started</a>
+            </div>
         </div>
     </div>
 </body>
